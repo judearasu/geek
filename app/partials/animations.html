@@ -1,20 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Basic Canvas Animation</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-</head>
-
-<body>
-  <input type="file" id="take-picture" accept="image/*">
 <canvas id="canvas" width="300" height="300"></canvas>
-
 <script type="text/javascript">
 var sun = new Image();
 var moon = new Image();
@@ -56,9 +40,7 @@ function draw() {
   ctx.beginPath();
   ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
   ctx.stroke();
- 
+  
   ctx.drawImage(sun,0,0,300,300);
 } init();
-            </script>
-</body>
-</html>
+</script>
