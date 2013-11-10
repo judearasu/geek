@@ -1,0 +1,5 @@
+name: WhyJquery
+description: Application demonstrating the Dart vs jquery
+dependencies:
+  browser: any
+  benchmark_harness: any

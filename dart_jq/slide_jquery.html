@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>slide_jquery</title>
+    <style type="text/css">
+     div{
+    width:300px;height:150px;
+    border:1px solid red;
+    }
+    </style>
+  </head>
+ 
+  <body>   
+<div id ="a1"></div>
+<div id ="a2"></div>
+<div id ="a3"></div>
+<div id ="a4"></div>
+ <script src="jquery-1.10.1.min.js"></script>
+<script>
+function bench() {
+for (var i = 0; i < 100000; i++) b.foo()
+}
+function loop()
+{
+  $("div").addClass("swing");
+}
+$(document).ready(function(){
+  for (var i=1; i<=100; i++) {
+  loop();
+  }
+})
+
+</script>
+</body>
+</html>
